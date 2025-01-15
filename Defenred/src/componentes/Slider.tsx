@@ -20,13 +20,15 @@ const Slider = ({ images }: { images: any[] }) => {
 
     <div className="slider-content" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
       {images.map((image, index) => (
-        <div
+       
+        <a href={image.index}>
+          <div
           key={index}
           className="slide"
-          style={{ backgroundImage: `url(${image.url})` }}
-        >
+          style={{ backgroundImage: `url(${image.url})` }}>
           <div className="slide-text">{image.text}</div>
         </div>
+       </a>
       ))}
     </div>
 

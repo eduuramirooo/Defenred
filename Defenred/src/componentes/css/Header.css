@@ -1,12 +1,19 @@
 header{
     background-color: #614630;
     width: 100%;
-    height: 10%;
     text-align: center;
+}
+.grid-1070{
+    display: grid;
+    grid-template-columns: 10% 70%;
 }
 .grid-3070{
     display: grid;
-    grid-template-columns: 10% 70%;
+    grid-template-columns: 30% 70%;
+}
+.grid-50{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .grid-5{
     display: grid;

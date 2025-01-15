@@ -84,3 +84,6 @@
 .dot.active {
   background-color: white;
 }
+.slider-content .slide{
+  width: 800px;
+}
