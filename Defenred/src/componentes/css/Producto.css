@@ -1,0 +1,23 @@
+.producto{
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 10px 0px;
+    margin-left: 1%;
+    padding: 10px;
+    transform: translateY(00);
+    transition: all 0.3s;
+    /* transform: translateX(-20); */
+}
+
+#ocultoProducto{
+    color: white;
+}
+.producto:hover{
+    background-color: #504343;
+}
+.producto img{
+    width: 80%;
+    height: 300px;
+    border-radius: 7px;
+}
