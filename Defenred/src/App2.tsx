@@ -1,12 +1,15 @@
-  import Header from './componentes/Header'
-  import './componentes/css/App.css'
+import Header from './componentes/Header'
+import './componentes/css/App.css'
 import Footer from './componentes/Footer'
-const App2= ()=> {
+import CajasCasas from './componentes/CajasCasa'
+const App2 = () => {
   return (
     <>
-      <Header/>
-    <p>Estas en casa del Respiro</p>
-    <Footer/>
+      <Header />
+      <h1>Casa de Respiro</h1>
+      <h3>Programa de respiro y formación sobre autocuidado</h3>
+    <CajasCasas/>
+      <Footer />
     </>
   )
 }
