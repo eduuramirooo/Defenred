@@ -1,0 +1,38 @@
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #32434a;
+}
+
+footer img {
+    width: 150px;
+}
+
+footer a {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    height: 50px; 
+    width: 150px; 
+    transition: all 0.5s;
+}
+footer a:hover {
+  border-radius: 7px;
+}
+footer  p{
+    margin: 10px;
+    font-size: 13px;
+    justify-content: center;
+    color: white;
+}
+hr {
+    border: 1px solid white;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 7px;
+}
