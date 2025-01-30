@@ -4,7 +4,8 @@ const Menu=() => {
         <a href="index.html">Inicio</a>
         <a href="index.html">Defenred</a>
         <a href="index.html">¿Que hacemos?</a>
-        <a href="index.html">Defensoras</a><a href="">Contacto</a>
+        <a href="index.html">Defensoras</a>
+        <a href="">Contacto</a>
       </div>
     );
   }
