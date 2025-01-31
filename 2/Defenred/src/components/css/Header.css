@@ -5,7 +5,7 @@ header{
 }
 .grid-1070{
     display: grid;
-    grid-template-columns: 10% 70%;
+    grid-template-columns: 10% 60% 10%;
 }
 .grid-3070{
     display: grid;

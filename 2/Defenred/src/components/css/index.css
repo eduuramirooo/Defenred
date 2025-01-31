@@ -1,0 +1,19 @@
+/* Kanit font */
+@font-face {
+    font-family: Kanit;
+    src: url(/Fuentes/Kanit/Kanit-Regular.ttf);
+}
+/* Outfit */
+@font-face {
+    font-family: Outfit;
+    src: url(/Fuentes/Outfit-VariableFont_wght.ttf);
+}
+.main {
+    text-align: center;
+   
+}
+.main h1{
+    font-family: 'Rowdies';
+    font-weight: bold;
+    text-transform: uppercase;
+}
