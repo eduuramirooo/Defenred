@@ -62,8 +62,8 @@ const ContactForm = () => {
 
             <div className="info-section">
               <h2>Horario de Atención</h2>
-              <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-              <p>Sábado: 10:00 AM - 2:00 PM</p>
+              <p>Lunes a Viernes: 9:00 - 21:00</p>
+              <p>Sábado: 10:00 - 15:00</p>
               <p>Domingo: Cerrado</p>
             </div>
 
