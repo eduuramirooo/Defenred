@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './css/Slider.css';
 
 const Slider = ({ images }: { images: any[] }) => {
@@ -23,14 +24,13 @@ const Slider = ({ images }: { images: any[] }) => {
     
         <div className="slider-content" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {images.map((image, index) => (
-           
-            <a href={image.index} key={index}>
+            <Link to={image.index} key={index}>
               <div
-              className="slide"
-              style={{ backgroundImage: `url(${image.url})` }}>
-              <div className="slide-text">{image.text}</div>
-            </div>
-           </a>
+          className="slide"
+          style={{ backgroundImage: `url(${image.url})` }}>
+          <div className="slide-text">{image.text}</div>
+              </div>
+            </Link>
           ))}
         </div>
     

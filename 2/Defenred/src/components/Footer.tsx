@@ -1,4 +1,5 @@
 import "./css/Footer.css";
+import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <>
@@ -7,7 +8,7 @@ const Footer = () => {
                     <div className="grid-50">
 
                         <img src="/DefenRedLogo_peqW.png" alt="" />
-                        <a href="" id="contactanosFooter">Contactanos</a>
+                        <Link to="/Contacto" id="contactanosFooter">Contactanos</Link>
                     </div>
 
 

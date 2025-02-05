@@ -18,7 +18,7 @@ const Menu = () => {
             <div className="icon-box gb a">
               <div className="icon"><i className="far fa-question-circle"></i></div>
               <div className="text">
-                <div className="title">Casa del respiro <i className="far fa-arrow-right"></i></div>
+               <Link to="/casaR"> <div className="title">Casa del respiro <i className="far fa-arrow-right"></i></div></Link>
               </div>
             </div>
             <div className="icon-box gb b">
@@ -65,7 +65,7 @@ const Menu = () => {
         </div>
       </nav>
 
-      <Link to="" id="contactanosFooter">Contactanos</Link>
+      <Link to="/Contacto" id="contactanosFooter">Contactanos</Link>
     </>
   );
 };
