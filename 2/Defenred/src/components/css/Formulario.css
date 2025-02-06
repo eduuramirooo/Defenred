@@ -30,6 +30,7 @@ body {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #ffeacb;
+    transition: all 0.3s;
   }
   
   .contact-form h2 {
@@ -54,6 +55,7 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    transition: all 0.3s;
   }
   .form-group input:hover,
   .form-group textarea:hover{

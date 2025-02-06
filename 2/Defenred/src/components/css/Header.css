@@ -182,7 +182,7 @@ nav .menu-item:nth-of-type(3):hover ~ #sub-menu-container #sub-menu-holder {
     min-width: 41.25em;
     height: 18.75em;
     display: grid;
-    grid-template-columns: 54% 50%;
+    grid-template-columns: 50% 50%;
 }
 .menu-item .sub-menu.triple {
     min-width: 41.25em;
