@@ -1,8 +1,16 @@
+import { Helmet } from 'react-helmet';
 import CajasCasas from "./components/CajasCasa";
 
 const CasaR = () => {
       return (
             <>
+                  <Helmet>
+                        <title>Inicio - Defenred - Casa de Respiro</title>
+
+                        <meta name="description" content="Este Programa de respiro tiene como objetivo el apoyo y 
+                        cuidado psicosocial de personas defensoras de derechos humanos 
+                        en un entorno natural privilegiado" />    
+                  </Helmet>
                   <div className="casaR">
                         <h1>Casa de Respiro</h1>
                         <h3>Programa de respiro y formación sobre autocuidado</h3>

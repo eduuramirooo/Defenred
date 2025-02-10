@@ -1,9 +1,9 @@
 import { Mail, Phone, MapPin } from "lucide-react";
-import { FaFacebook, FaInstagram, FaYoutubeSquare } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { SiX } from 'react-icons/si';
 import "./components/css/Formulario.css";
 
-const ContactForm = () => {
+const Formulario = () => {
   return (
     <>
       <h3>Si tienes alguna pregunta o necesitas más información
@@ -24,7 +24,7 @@ const ContactForm = () => {
               </div>
               <div className="form-group">
                 <label htmlFor="subject">Asunto</label>
-                <input id="subject" type="text" placeholder="Asunto del mensaje" />
+                <input id="subject" type="text" />
               </div>
               <div className="form-group">
                 <label htmlFor="message">Mensaje</label>
@@ -80,7 +80,7 @@ const ContactForm = () => {
                   <FaInstagram size={30} />
                 </a>
                 <a href="https://www.youtube.com/@DEFENRED" target="_blank" rel="noopener noreferrer">
-                  <FaYoutubeSquare size={30} />
+                  <FaYoutube size={35} />
                 </a>
               </div>
             </div>
@@ -105,4 +105,4 @@ const ContactForm = () => {
   );
 };
 
-export default ContactForm;
+export default Formulario;

@@ -9,6 +9,7 @@ const Menu = () => {
             <Link to="/">Inicio</Link>
           </div>
         </div>
+        
         {/* 2 */}
         <div className="menu-item highlight">
           <div className="menu-text">
@@ -24,7 +25,7 @@ const Menu = () => {
             <div className="icon-box gb b">
               <div className="icon"><i className="far fa-users-class"></i></div>
               <div className="text">
-                <div className="title">Formacion <i className="far fa-arrow-right"></i></div>
+                <Link to="/formacion"><div className="title">Formacion <i className="far fa-arrow-right"></i></div></Link>
               </div>
             </div>
             <div className="icon-box gb c">
