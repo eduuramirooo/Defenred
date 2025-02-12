@@ -37,7 +37,7 @@ const Menu = () => {
             <div className="icon-box gb d">
               <div className="icon"><i className="far fa-chess-rook"></i></div>
               <div className="text">
-                <div className="title">En-Redados <i className="far fa-arrow-right"></i></div>
+                <Link to={"/enredados"}><div className="title">En-Redados <i className="far fa-arrow-right"></i></div></Link>
               </div>
             </div>
             <div className="icon-box gb e">

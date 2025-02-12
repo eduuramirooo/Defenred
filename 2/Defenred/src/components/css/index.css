@@ -23,3 +23,57 @@
     text-align: center;
     margin-top: 1%;
 }
+  .grid3{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.who .grid3 img{
+    margin: 1% 0 1% 40%;
+    width: 150px;
+    height: 150px;
+    border-radius: 7px;
+}
+.formacion{
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+}
+#intro{
+    margin-top: 1%;
+    border-radius: 7px;
+}
+.formacion .grid-3 img{
+    height: 200px;
+        border-radius: 7px;
+}
+.enredados{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 1%;
+}
+.enredados .lista1{
+    width: 60%;
+    margin-top: 1%;
+    margin-left: 20%;
+}
+.enredados  ul{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.enredados li{
+    height: 400px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font-size: 1em;
+    transition: all 0.5s;
+}
+.enredados li p:hover{
+    background-color: rgba(211, 211, 211, 0.238);
+}
+.enredados li:hover{
+    border: 1px solid black;
+    background-position: 40%;
+    background-image: url(/backgroundli.jpg);
+}

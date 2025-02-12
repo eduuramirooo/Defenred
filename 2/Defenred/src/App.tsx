@@ -5,6 +5,7 @@ import CasaR from './CasaR'
 import Who from './Who'
 import Contacto from './Contacto'
 import Formacion from './Formacion'
+import Enredados from './Enredados'
 import './components/css/App.css'
 
 function App() {
@@ -14,12 +15,14 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' element={<Layout />}>
-            <Route path='/' element={<Index/>}/>
-             <Route path='/casaR' element={<CasaR/>}/> 
-             <Route path='who' element={<Who/>}></Route>
-             <Route path='*' element={<h1>Not Found</h1>}/>
-             <Route path='contacto' element={<Contacto/>}></Route>
-             <Route path='formacion' element={<Formacion/>}></Route>
+            <Route path='/' element={<Index />} />
+            <Route path='/casaR' element={<CasaR />} />
+            <Route path='who' element={<Who />}></Route>
+            <Route path='*' element={<h1>Not Found</h1>} />
+              <Route path='enredados' element={<Enredados/>}></Route>
+              <Route path='contacto' element={<Contacto />}></Route>
+            <Route path='formacion' element={<Formacion />}></Route>
+           
           </Route>
         </Routes>
       </Router>
