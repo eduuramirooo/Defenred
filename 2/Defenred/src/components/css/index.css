@@ -12,6 +12,10 @@
     text-align: center;
    
 }
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 .main h1{
     font-family: 'Rowdies';
     font-weight: bold;
@@ -26,6 +30,10 @@
   .grid3{
     display: grid ;
     grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .who .grid3 img{
     margin: 1% 0 1% 40%;
@@ -76,4 +84,28 @@
     border: 1px solid black;
     background-position: 40%;
     background-image: url(/backgroundli.jpg);
+}
+.wherewe{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+.wherewe img{
+    border-radius: 7px;
+}
+.defensoras{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 1%;
+}
+img{
+    border-radius: 7px;
+}
+.defensoras .grid-4 p{
+    border-bottom: 1px solid transparent;
+    transition: all 0.5s;
+}
+.defensoras .grid-4 p:hover{
+    border-bottom: 1px solid black;
 }

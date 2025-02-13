@@ -6,6 +6,8 @@ import Who from './Who'
 import Contacto from './Contacto'
 import Formacion from './Formacion'
 import Enredados from './Enredados'
+import DondeVamos from './DondeVamos'
+import Defensoras from './Defensoras'
 import './components/css/App.css'
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
             <Route path='who' element={<Who />}></Route>
             <Route path='*' element={<h1>Not Found</h1>} />
               <Route path='enredados' element={<Enredados/>}></Route>
+              <Route path='defensoras' element={<Defensoras />}></Route>
+            <Route path='where' element={<DondeVamos />}></Route>
               <Route path='contacto' element={<Contacto />}></Route>
             <Route path='formacion' element={<Formacion />}></Route>
            

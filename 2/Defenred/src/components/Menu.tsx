@@ -51,7 +51,7 @@ const Menu = () => {
         {/* 3 */}
         <div className="menu-item highlight">
           <div className="menu-text">
-            <a href="#">Defensoras</a>
+            <Link to="defensoras">Defensoras</Link>
           </div>
           <div className="sub-menu triple">
             <div className="top-container gb c icon-box">
