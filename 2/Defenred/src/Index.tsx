@@ -9,8 +9,15 @@ const Index= () => {
 <>
 <div className="main">
         <Slider images={images}/>
-</div>
-</>
-    );
-}
+        <h1>El proyecto</h1>
+        <h2>Casa de respiro</h2>
+                <div className="grid-3" style={{marginTop: '1%'}}>
+                    <div>a</div>
+                    <div>a</div>
+                    <div>a</div>
+                </div>
+        </div>
+        </>
+            );
+        }
 export default Index;

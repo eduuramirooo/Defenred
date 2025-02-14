@@ -16,6 +16,13 @@
     width: 80%;
     margin: 1% auto;
 }
+.main h1, .main h2{
+    margin: 0;
+}
+p{
+    color: #333333;
+    font-size: 1.1em;
+}
 
 .main h1 {
     font-family: 'Rowdies';

@@ -10,7 +10,6 @@ footer img {
 }
 
 footer a, header  #contactanosFooter {
-    margin-top: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,19 +20,40 @@ footer a, header  #contactanosFooter {
     width: 150px; 
     transition: all 0.5s;
 }
-footer a:hover, header  #contactanosFooter:hover{
+footer a:hover:not(.redes), header  #contactanosFooter:hover:not(.redes){
   border-radius: 7px;
   background-color: #ff7913;
 }
-header  #contactanosFooter{
+header  #contactanosFooter, footer #contactanosFooter{
     margin-left: 20%;
     margin-top: 50px;
+    margin-top: 20%;
+}
+.iconos-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.iconos-redes a {
+    color: #333;
+    transition: color 0.3s;
+}
+
+.iconos-redes a:hover {
+    color: #ff7913;
 }
 footer  p{
     margin: 10px;
     font-size: 13px;
     justify-content: center;
     color: white;
+}
+footer .iconos-redes a{
+    margin-top: 4%;
+    border: none;
+}
+footer .iconos-redes a:hover{
+    background-color: transparent;
 }
 hr {
     border: 1px solid white;
