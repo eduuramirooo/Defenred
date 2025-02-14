@@ -40,8 +40,6 @@ img {
 
 
 .who .grid3 img, .formacion .grid-3 img {
-    width: 150px;
-    height: 150px;
     margin: 1% auto;
 }
 .formacion .grid-3 img {
@@ -134,13 +132,27 @@ img {
     text-transform: uppercase;
     border: 1px solid white;
     padding: 5px;
-    border-radius: 7px;
     width: 80%;
     margin: 1% auto;
     transition: all 0.5s;
 }
 .who .banner .texto .grid-50 a:hover{
-    background-color: white;
-    color: black;
+    border-radius: 7px;
+    background-color: #ff7913;
 }
 
+/* Aplicar estilos solo a los div con nombres específicos */
+.formacion div:not(.grid-3):not(.grid-50) {
+    border: 1px solid transparent;
+    padding: 10px;
+    margin-top: 10px;
+    transition: all 0.5s;
+}
+
+/* Efecto hover para los div específicos */
+.formacion div:not(.grid-3):not(.grid-50):hover {
+    border: 1px solid black;
+    border-radius: 7px;
+    scale: 1.05;
+    background-color: rgba(211, 211, 211, 0.238);
+}
