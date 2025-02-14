@@ -1,75 +1,64 @@
-/* Kanit font */
+/* Fuentes */
 @font-face {
-    font-family: Kanit;
-    src: url(/Fuentes/Kanit/Kanit-Regular.ttf);
+    font-family: 'Kanit';
+    src: url('/Fuentes/Kanit/Kanit-Regular.ttf');
 }
-/* Outfit */
 @font-face {
-    font-family: Outfit;
-    src: url(/Fuentes/Outfit-VariableFont_wght.ttf);
+    font-family: 'Outfit';
+    src: url('/Fuentes/Outfit-VariableFont_wght.ttf');
 }
-.main {
+
+/* Estilos generales */
+.main, .who, .formacion, .enredados, .wherewe, .defensoras, .casaR {
+    flex: 1;
+    background-color: #f5f5f5;
     text-align: center;
-   
+    width: 80%;
+    margin: 1% auto;
 }
-.grid-2{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.main h1{
+
+.main h1 {
     font-family: 'Rowdies';
     font-weight: bold;
     text-transform: uppercase;
 }
-.who{
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-    margin-top: 1%;
+
+img {
+    border-radius: 7px;
 }
-  .grid3{
-    display: grid ;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.grid-4{
+
+/* Contenedores de grillas */
+.grid-2, .grid3, .grid-4 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
-.who .grid3 img{
-    margin: 1% 0 1% 40%;
+.grid-2 { grid-template-columns: 1fr 1fr; }
+.grid3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+/* Secciones específicas */
+
+
+.who .grid3 img, .formacion .grid-3 img {
     width: 150px;
     height: 150px;
-    border-radius: 7px;
+    margin: 1% auto;
 }
-.formacion{
-    width: 60%;
-    margin-left: 20%;
-    text-align: center;
-}
-#intro{
-    margin-top: 1%;
-    border-radius: 7px;
-}
-.formacion .grid-3 img{
+.formacion .grid-3 img {
     height: 200px;
-        border-radius: 7px;
 }
-.enredados{
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-    margin-top: 1%;
-}
-.enredados .lista1{
+
+.enredados .lista1 {
     width: 60%;
-    margin-top: 1%;
-    margin-left: 20%;
+    margin: 1% auto;
 }
-.enredados  ul{
+
+.enredados ul {
     list-style: none;
     margin-bottom: 10px;
 }
-.enredados li{
+
+.enredados li {
     height: 400px;
     width: 100%;
     border: 1px solid transparent;
@@ -77,35 +66,81 @@
     font-size: 1em;
     transition: all 0.5s;
 }
-.enredados li p:hover{
+
+.enredados li p:hover {
     background-color: rgba(211, 211, 211, 0.238);
 }
-.enredados li:hover{
+
+.enredados li:hover {
     border: 1px solid black;
     background-position: 40%;
     background-image: url(/backgroundli.jpg);
 }
-.wherewe{
-    text-align: center;
-    width: 80%;
-    margin-left: 10%;
-}
-.wherewe img{
-    border-radius: 7px;
-}
-.defensoras{
-    width: 80%;
-    margin-left: 10%;
-    text-align: center;
-    margin-top: 1%;
-}
-img{
-    border-radius: 7px;
-}
-.defensoras .grid-4 p{
+
+.defensoras .grid-4 p {
     border-bottom: 1px solid transparent;
     transition: all 0.5s;
 }
-.defensoras .grid-4 p:hover{
+
+.defensoras .grid-4 p:hover {
     border-bottom: 1px solid black;
 }
+.who .banner {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    border-radius: 7px;
+    overflow: hidden; /* Evita que el pseudo-elemento sobresalga */
+}
+
+.who .banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/whoBanner.jpg);
+    background-size: cover;
+    background-position: 20% 10%;
+    transition: all 0.5s;
+    z-index: 0;
+}
+
+.who .banner:hover::before {
+    filter: blur(5px);
+}
+
+.who .banner .texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+    z-index: 1; /* Asegura que el texto esté encima */
+}
+.who .banner .texto .grid-50{
+    width: 50%;
+    margin-left: 25%;
+}
+.who .banner .texto .grid-50 a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'Rowdies';
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 7px;
+    width: 80%;
+    margin: 1% auto;
+    transition: all 0.5s;
+}
+.who .banner .texto .grid-50 a:hover{
+    background-color: white;
+    color: black;
+}
+
