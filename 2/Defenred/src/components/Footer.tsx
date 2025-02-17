@@ -1,6 +1,6 @@
 import "./css/Footer.css";
-import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
-import { SiX } from 'react-icons/si';
+ import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
+ import { SiX } from 'react-icons/si';
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
             <footer>
                 <div className="grid-3070">
                     <div className="grid-50">
-                        <img src="/DefenRedLogo_peqW.png" alt="Defenred Logo" />
+                    <img src="/DefenRedLogo_peqW.png" alt="Defenred Logo"  width="100%"/>
                         <Link to="/Contacto" id="contactanosFooter">Contáctanos</Link>
                     </div>
                     <div className="iconos-redes">

@@ -20,13 +20,13 @@ const CasaR = () => {
                               <div className='derecha'>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima ullam saepe iste eveniet natus quidem ab, deserunt adipisci? Aliquam molestiae ex eius placeat. Explicabo illo provident ex esse officia.
                                           Sapiente laboriosam soluta impedit, unde, iste ullam delectus quae quidem velit commodi officiis? Quae odit iure commodi. Temporibus porro tempore eaque fuga reiciendis, repudiandae et explicabo nulla iusto deserunt recusandae?</p>
-                                    <img src="/programa.jpg" alt="" />
+                                    <img src="/programa.jpg" alt="Programa" width="290" height="174" />
                               </div>
                         </div>
                         <div className="programa" id="offer">
                               <h3>El PROGRAMA</h3>
                               <div className='izquierda'>
-                                    <img src="/programa.jpg" alt="" />
+                                    <img src="/programa.jpg" alt="Programa" width="290" height="174" />
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima ullam saepe iste eveniet natus quidem ab, deserunt adipisci? Aliquam molestiae ex eius placeat. Explicabo illo provident ex esse officia.
                                           Sapiente laboriosam soluta impedit, unde, iste ullam delectus quae quidem velit commodi officiis? Quae odit iure commodi. Temporibus porro tempore eaque fuga reiciendis, repudiandae et explicabo nulla iusto deserunt recusandae?</p></div>
                         </div>
@@ -35,7 +35,7 @@ const CasaR = () => {
                               <div className='derecha'>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima ullam saepe iste eveniet natus quidem ab, deserunt adipisci? Aliquam molestiae ex eius placeat. Explicabo illo provident ex esse officia.
                                           Sapiente laboriosam soluta impedit, unde, iste ullam delectus quae quidem velit commodi officiis? Quae odit iure commodi. Temporibus porro tempore eaque fuga reiciendis, repudiandae et explicabo nulla iusto deserunt recusandae?</p>
-                                    <img src="/programa.jpg" alt="" />
+                                    <img src="/programa.jpg" alt="Programa" width="290" height="174" />
                               </div>
                         </div>
 
