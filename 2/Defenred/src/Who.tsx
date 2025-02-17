@@ -47,7 +47,7 @@ function Who() {
                     derechos humanos. Trabajamos incansablemente para proporcionar
                     apoyo integral a quienes lo necesitan.
                 </p>
-                <div className='grid3'>
+                <div className='grid3' style={{marginTop:"2%"}}>
                     <img src="/img/who3.jpg" alt="" />
                     <img src="/img/who1.jpg" alt="" />
                     <img src="/img/who.jpg" alt="" />

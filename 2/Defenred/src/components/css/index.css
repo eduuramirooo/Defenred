@@ -48,6 +48,10 @@ img {
 
 .who .grid3 img, .formacion .grid-3 img {
     margin: 1% auto;
+    transition: all 0.5s;
+}
+.who .grid3 img:hover, .formacion .grid-3 img:hover{
+    scale: 1.05;
 }
 .formacion .grid-3 img {
     height: 200px;
