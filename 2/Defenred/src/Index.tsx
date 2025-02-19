@@ -44,31 +44,9 @@ const Index: React.FC = () => {
         <Slider images={images} />
         <h1>El proyecto</h1>
         <h2>Casa de respiro</h2>
-        <div className="grid-3" style={{ marginTop: '1%' }}>
-          {loading ? (
-            <p>Cargando...</p>
-          ) : error ? (
-            <p>Error: {error}</p>
-          ) : (
-            contenidos.map((contenido) => (
-              <div key={contenido._id} className="grid-item">
-                {contenido.image && (
-                  <img 
-                    src={contenido.image} 
-                    alt={contenido.title} 
-                    style={{ maxWidth: '100%', borderRadius: '8px', marginBottom: '10px' }}
-                  />
-                )}
-                <h3>{contenido.title}</h3>
-                <p>{contenido.content}</p>
-                <small>{new Date(contenido.date).toLocaleDateString()}</small>
-              </div>
-            ))
-          )}
         </div>
-      </div>
     </>
   );
 };
 
-export default Index;
+export default Index; 
