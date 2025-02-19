@@ -9,6 +9,7 @@ import Enredados from './Enredados'
 import DondeVamos from './DondeVamos'
 import Defensoras from './Defensoras'
 import ContenidoForm from './components/AgregarF';
+import ListarUser from './components/ListarUser'
 import './components/css/App.css'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
               <Route path='contacto' element={<Contacto />}></Route>
             <Route path='formacion' element={<Formacion />}></Route>
             <Route path='agregarF' element={<ContenidoForm/>}></Route>
+            <Route path='listar' element={<ListarUser/>}></Route>
            
           </Route>
         </Routes>

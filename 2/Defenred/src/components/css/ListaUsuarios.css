@@ -1,0 +1,104 @@
+/* Estilos generales */
+.usuarios-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Grid de usuarios */
+  .grid-usuarios {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  /* Tarjeta de usuario */
+  .usuario-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .usuario-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  /* Elementos internos */
+  .usuario-nombre {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 0.5rem;
+  }
+  
+  .usuario-email {
+    color: #666;
+    word-break: break-all;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitulo {
+    font-weight: 500;
+    color: #444;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .texto {
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .texto-italico {
+    font-style: italic;
+    color: #666;
+  }
+  
+  .usuario-fecha {
+    border-top: 1px solid #eee;
+    padding-top: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .fecha-texto {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  /* Estados */
+  .loading, .error, .sin-usuarios {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.1rem;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  
+  .sin-usuarios {
+    color: #666;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .grid-usuarios {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .grid-usuarios {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }

@@ -1,56 +1,64 @@
-import express from 'express';
-import mongoose from 'mongoose';
+import express, { json } from 'express';
+import mongoose from 'mongoose'; // Importa mongoose directamente
 import cors from 'cors';
-import compression from 'compression';
 
 const app = express();
+const PORT = 5000;
 
-// Habilitar compresión Gzip
-app.use(compression());
+// Middleware (sin body-parser)
 app.use(cors());
+app.use(json()); // ¡Reemplazamos bodyParser.json()!
 
+// Conexión a MongoDB (igual)
 mongoose.connect('mongodb://localhost:27017/Defenred', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('Conectado a MongoDB'))
+.catch(err => console.error('Error de conexión:', err));
+
+// Modelo Mongoose actualizado
+const formDataSchema = new mongoose.Schema({
+  nombre: { type: String, required: true },
+  email: { type: String, required: true },
+  asunto: String,
+  mensaje: { type: String, required: true },
+  aceptaPolitica: Boolean,
+  boletin: Boolean
 });
 
-const contenidoSchema = new mongoose.Schema({
-    title: String,
-    content: String,
-    image: String, // URL o base64 de la imagen
-    date: { type: Date, default: Date.now },
-});
-const Contenido = mongoose.model('contenido', contenidoSchema);
+const FormData = mongoose.model('FormData', formDataSchema);
 
-
-
-// Agrega esto después de cors()
-app.use(express.json());
-
-
-// Modifica la ruta POST
-app.post('/contenido', async (req, res) => {
+app.get('/api/usuarios', async (req, res) => {
   try {
-    const { title, content, image } = req.body;
-    if (!title || !content) { // Hacemos la imagen opcional
-      return res.status(400).json({ error: "Title and content are required" });
-    }
-
-    const newContenido = new Contenido({
-      title,
-      content,
-      image: image || null, // Guarda null si no hay imagen
-      date: new Date()
+    const users = await FormData.find().sort({ fechaCreacion: -1 });
+    res.json(users);
+  } catch (error) {
+    res.status(500).json({ error: 'Error al obtener los usuarios' });
+  }
+});
+// Ruta actualizada
+app.post('/api/enviar-formulario', async (req, res) => {
+  try {
+    const { nombre, email, asunto, mensaje, aceptaPolitica, boletin } = req.body;
+    
+    const nuevoDato = new FormData({
+      nombre,
+      email,
+      asunto,
+      mensaje,
+      aceptaPolitica: aceptaPolitica || false,
+      boletin: boletin || false,
+      fechaCreacion: { type: Date, default: Date.now }
     });
 
-    await newContenido.save();
-    res.status(201).json(newContenido);
+    await nuevoDato.save();
+    res.status(201).json({ mensaje: 'Datos guardados exitosamente' });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: 'Error al guardar los datos' });
   }
 });
 
-const PORT = 5000;
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+  console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
