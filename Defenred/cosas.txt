@@ -1,1 +1,0 @@
-https://api.whatsapp.com/send/?phone=66666666&text=Hola
