@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Slider from './components/Slider';
+import { Helmet } from 'react-helmet';
 
 interface Contenido {
   _id: string;
@@ -40,11 +41,17 @@ const Index: React.FC = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Inicio - Defenred - Casa de Respiro</title>
+        <meta name="description" content="La Casa de Respiro de DEFENRED ofrece a los defensores de los derechos 
+        humanos período de descanso para autocuidado." />
+      </Helmet>
+
       <div className="main">
         <Slider images={images} />
         <h1>El proyecto</h1>
         <h2>Casa de respiro</h2>
-        </div>
+      </div>
     </>
   );
 };
